@@ -25,7 +25,7 @@ const config: HardhatUserConfig = {
             viaIR: false,
         },
     },
-    defaultNetwork: "calibration",
+    defaultNetwork: "devnet",
     namedAccounts: {
         deployer: {
             // By default, it will take the first Hardhat account as the deployer
@@ -42,6 +42,11 @@ const config: HardhatUserConfig = {
             url: "https://rpc.ankr.com/filecoin_testnet",
             accounts: [deployerPrivateKey],
             chainId: 314159,
+        },
+        devnet: {
+            url: "http://lotus-1:1234/rpc/v1",
+            accounts: [deployerPrivateKey],
+            chainId: 31415926,
         },
     },
     // configuration for harhdat-verify plugin with Blockscout API
