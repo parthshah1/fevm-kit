@@ -44,7 +44,7 @@ const config: HardhatUserConfig = {
             chainId: 314159,
         },
         devnet: {
-            url: "http://lotus-1:1234/rpc/v1",
+            url: "http://127.0.0.1:1234/rpc/v1",
             accounts: [deployerPrivateKey],
             chainId: 31415926,
         },
